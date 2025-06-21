@@ -1,4 +1,7 @@
-{{ config(materialized='table') }}
+{{ config(
+    materialized='table',
+    description='Customer dimension enriched with order metrics'
+) }}
 
 SELECT
   c.customer_id,

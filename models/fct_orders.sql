@@ -1,4 +1,7 @@
-{{ config(materialized='table') }}
+{{ config(
+    materialized='table',
+    description='Fact table for all ecommerce orders'
+)}}
 
 SELECT
   order_id,

@@ -6,4 +6,14 @@ sources:
     schema: PUBLIC
     tables:
       - name: customers
+        columns:
+          - name: customer_id
+            tests: [not_null, unique]
+          - name: signup_date
+            tests: [not_null]
       - name: orders
+        columns:
+          - name: order_id
+            tests: [not_null, unique]
+          - name: customer_id
+            tests: [not_null]
