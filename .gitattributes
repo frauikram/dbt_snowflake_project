@@ -1,0 +1,4 @@
+*.sql linguist-language=SQL
+*.yaml linguist-language=YAML
+*.yml linguist-language=YAML
+*.csv linguist-language=CSV
